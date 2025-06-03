@@ -34,3 +34,21 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+  test:
+    runs-on: self-hosted
+    steps:
+    - name: Run test script
+      run: |
+        echo Running some tests...
+        sleep 5
+        echo Tests complete.
+
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Run deploy script
+        run: |
+          echo Deploying application...
+          sleep 5
+          echo Deployment complete.
